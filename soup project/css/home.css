@@ -588,7 +588,7 @@ a{
         width: 80%;
     }
     .reviwe-maker{
-        top: 760px;
+        top: 765px;
     }
     .r2{
         top: 810px;
@@ -633,7 +633,7 @@ a{
     }
     .main-ul{
         margin: 0;
-        line-height: 30px;
+        line-height: 25px;
         font-size: 9px;
     }
     .offers-titel{
@@ -647,6 +647,7 @@ a{
     }
     .reviwes-background{
         height: 10005px;
+        left:10px
     }
 }
 @media(min-width:768px){
