@@ -105,6 +105,9 @@
     .of2-content{
         top: 10%;
     }
+    .content-head{
+        margin:5px 13px;
+    }
     .content-head h2{
         font-size: 17px;
     margin-bottom: 5px;
