@@ -578,26 +578,26 @@ a{
     }
     .reviwes-background{
         position: absolute;
-        width: 60%;
+        width: 100%;
     }
     .reviwes{
-        height: 850px;
+        height: 1005px;
     }
     .reviwe{
         top: 540px;
         width: 80%;
     }
     .reviwe-maker{
-        top: 750px;
+        top: 760px;
     }
     .r2{
-        top: 800px;
+        top: 810px;
     }
     .m2{
-        top: 990px;
+        top: 1005px;
     }
     .menu{
-        margin-top: 200px;
+        margin-top: 75px;
     }
     .owl-carousel.owl-theme.owl-menu.owl-loaded.owl-drag{
         width: 90%!important;
@@ -646,7 +646,7 @@ a{
         right: 10px;
     }
     .reviwes-background{
-        height: 950px;
+        height: 10005px;
     }
 }
 @media(min-width:768px){
