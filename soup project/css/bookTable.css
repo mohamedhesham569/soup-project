@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+}
+:root{
+    --maincolor:#282b2e;
+    --bordercolor:#ddae71;
+    --pcolor:rgb(161 158 158)
+}
+.main{
+    width: 95%;
+    position: relative; 
+    margin: auto;
+    background-image: url(../images/video_3.mp4);
+}
+.book-form{
+    margin: auto;
+    width: 40%;
+    position: absolute;
+    top: 5.5%;
+    background-color: white;
+    left: 50%;
+    transform: translate(-50%);
+}
+form{
+    border: 1px solid #00000045;
+    border-top: none;
+    border-bottom: none;
+}
+label h2{
+    font-size: 20px;
+    width: 95%;
+    margin: auto;
+    color: var(--bordercolor);
+    padding: 5px;
+}
+.book-head{
+    height:166px;
+    background-image: url(../images/book.jpg);
+}
+.book-head h2,p{
+    margin: 10px;
+    color:white;
+    font-weight: 100;
+}
+.book-head i{
+    margin: 20px;
+    color: var(--bordercolor);
+}
+input{
+    width: 95%;
+    height: 21px;
+    margin: 5px 11px;
+}
+button{
+    width: 100%;
+    height: 45px;
+    font-size: 23px;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+    color: #ffffffeb;
+    background-color: #000000bf;
+    position: relative;
+    z-index: 10;
+}
+button::after{
+    content: "";
+    width: 100%;
+    height: 0%;
+    background-color: #ddae71;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: all 0.4s;
+}
+button:hover::after{
+    height: 100%;
+}
+button:hover{
+    transform: scale(0.99);
+    box-shadow: 1px 1px 12px 4px #0000007d;
+}
+.bg-video{
+    position: relative;
+}
+.layer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #00000054;
+}
+.video{
+    width: 100%;
+}
+@media(max-width:1118px){
+    .bg-video{
+        overflow: hidden;
+    }
+    .video{
+        width: 366%;
+        height: 671px;
+        /* left: 33px; */
+        position: relative;
+        left: -89%;
+    }
+    .book-form{
+        width: 80%;
+    }
+    .book-head{
+        background-position-x:-156px ;
+    }
+    .book-head i{
+        margin: 10px;
+    }
+    .book-head h2,p{
+        margin: 8px;
+    }
+    input{
+        width: 89%;
+    }
+}
+@media(min-width:1119px){
+    .video{
+        left: -80%;
+        width: 256%;
+        height: 711px;
+        /* left: 33px; */
+        position: relative;
+    }
+    .bg-video{
+        overflow: hidden;
+    }
+}

@@ -1,0 +1,676 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+}
+:root{
+    --maincolor:#282b2e;
+    --bordercolor:#ddae71;
+    --pcolor:rgb(161 158 158)
+}
+body{
+    overflow-x: hidden;
+    margin: auto;
+}
+.nav-items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: capitalize;
+    margin-bottom: 1%;
+}
+.logo{
+    width: 6%;
+    height: 70px;
+    margin: 0px 34px;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+.nav-ul{
+    width: 50%;
+}
+.nav-ul ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 25px;
+}
+.nav-ul ul li{
+    position: relative;
+    padding: 10px;
+    transition: all 0.5s;
+}
+.nav-ul ul a::after{
+    content: "";
+    width: 0;
+    height: 33.3%;
+    background-color: var(--bordercolor);
+    position: absolute;
+    bottom: 33%;
+    left: 100%;
+    transition: all 0.5s;
+}
+.nav-ul ul li::after{
+    content: "";
+    width: 0;
+    height: 33.3%;
+    background-color: var(--bordercolor);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s;
+    z-index: -1;
+}
+.nav-ul ul li::before{
+    content: "";
+    width: 0;
+    height: 33.3%;
+    background-color: var(--bordercolor);
+    position: absolute;
+    transition: all 0.5s;
+    z-index: -1;
+    left: 0;
+    top: 4px;
+}
+.nav-ul ul li:hover{
+    color: white;
+    z-index: 1;
+}
+.nav-ul ul a:hover::after{
+    width: 100%;
+    left: 0;
+}
+.nav-ul ul li:hover::before{
+    width: 100%;
+}
+.nav-ul ul li:hover::after{
+    width: 100%;
+}
+.cart{
+    width: 8%;
+    font-size: 37px;
+    display: flex;
+}
+.cart:hover i{
+    color: var(--bordercolor);
+    border-right: 1px solid var(--bordercolor);
+}
+.cart i{
+    padding: 8px 13px;
+    border-right: 1px solid var(--maincolor);
+    color: var(--maincolor);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+a{
+    text-decoration: none;
+    color: var(--maincolor);
+    position: relative;
+}
+/*landing*/
+.landing{
+    width: 95%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.content{
+    height: 50vh;
+    width: 40%;
+    position:absolute;
+    right: 0;
+    top: 25vh;
+    background-color:var(--maincolor);
+}
+.content h2{
+    font-size: 40px;
+}
+.content h2,p{
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    text-transform: capitalize;
+}
+.content p{
+    color: var(--pcolor);
+    font-size: 20px;
+}
+.content button{
+    width: 30%;
+    height:20%;
+    margin: 20px 0px 0px 20px;
+    background-color: var(--maincolor);
+    color: white;
+    border: 1px solid #ddae71;
+    cursor: pointer;
+    font-size: 20px;
+    position: relative;
+    z-index: 100;
+}
+.content button::after{
+    content: "";
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    transition: all 0.3s;
+    background-color: var(--bordercolor);
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+.content button:hover{
+    transform: scale(0.99);
+}
+.content button:hover::after{
+    height: 100%;
+}
+.item1,
+.item2,
+.item3
+{
+    transform: transition 0.5s;
+    background-size:cover ;
+    width: 100%;
+    height: 90vh;
+}
+.item1{
+    background-image: url(../images/slider-burger.jpg);
+}
+.item2{
+    background-image: url(../images/slider-dessert.jpg);
+}
+.item3{
+    background-image: url(../images/slider-pasta.jpg);
+}
+.pasta-price{
+    display:block;
+    width: 29.7%;
+    height:20%;
+    margin: 0px 0px 20px 20px;
+    background-color: var(--bordercolor);
+    font-size: 22px;
+    border: 1px solid #ddae71;
+    height: 10%;
+    padding: 5px 0px;
+    text-align: center;
+    color:white;
+}
+
+/*reviwes*/
+.reviwes{
+    width: 95%;
+    height: 800px;
+    margin: auto;
+    position: relative;
+}
+.reviwes-background{
+    position: relative;
+    left: 40%;
+    width: 723px;
+    height: 100%;
+    background-image: url(../images/bg-food.jpg);
+    background-size: cover;
+}
+.rate-content{
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 0;
+}
+.rating{
+    margin: 20px;
+    width: fit-content;
+}
+.rate-content p{
+    width: 40vw;
+    height: fit-content;
+    margin: 0px 20px 20px;
+    line-height: 30px;
+    padding: 0;
+    color: var(--pcolor);
+}
+.rate-content h2{
+    height: fit-content;
+    font-size: 40px;
+    width: 50vw;
+    margin: 20px;
+}
+.rate-h2,
+.rate-p{
+    color: #383c40;
+    position: relative;
+    height: 100px;
+}
+.rate-content input{
+    display: none;
+}
+.rating label{
+    color: #d2d214;
+}
+.white{
+    color: #bbc4c6!important;
+}
+.reviwe{
+    left: -100%;
+    position: absolute;
+    top: 290px;
+    background-color: #d5d5db94;
+    border-radius: 10px;
+    border-bottom-right-radius: 0px;
+    transition: all 1.3s;
+    visibility: hidden;
+}
+.reviwe-content{
+    margin: 40px 10px;
+}
+.reviwe::after{
+    content: "";
+    top: 100%;
+    right: 0;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-top: 23px solid #d5d5db94;
+    border-left: 24px solid white;
+    
+
+}
+.reviwe-content h2{
+    color: var(--pcolor);
+    margin: 20px;
+
+}
+.reviwe-maker{
+    position: absolute;
+    top: 450px;
+    display: flex;
+    left: 0;
+    align-items: center;
+    visibility: hidden;
+    transition: 1s;
+    transition-delay: 1s;
+}
+.maker-image{
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/avatar02.jpg);
+    border-radius: 50%;
+    background-size: cover;
+}
+.reviwe-maker span{
+    font-size: 16px;
+    margin: 0px 5px;
+}
+.reviwe-maker p{
+    color: var(--pcolor);
+    padding: 0;
+    margin: 0px 5px;
+    height: fit-content;
+}
+.r2{
+    top: 535px;
+    left: 30%;
+    background-color: #000000d6;
+    transition:1s;
+    transition-delay:1s!important;
+}
+.r2::after{
+    border-top: 23px solid #000000d6;
+    border-left: 24px solid white;
+}
+.reviwe-h2{
+    color: #ffffffd9!important;
+}
+.m2{
+    top: 690px;
+    left: 40%;
+}
+.mi2{
+    background-image: url(../images/avatar01.jpg);
+}
+/*end reviwes*/
+
+
+
+/*start menu*/
+.menu-item{
+    width: 99%;
+    margin: 20px 0px;
+}
+.menu-item a:hover img{
+    transform: scale(1.01);
+}
+.owl-menu{
+    margin: 20px;
+    width: 97%!important;
+}
+.owl-prev{
+    position: absolute;
+    top: 5%;
+    left: 0;
+    font-size: 38px!important;
+    height: 82%;
+    color: aliceblue!important;
+    width: 3%;
+    margin: 0!important;
+    font-size: 75px!important;
+}
+.owl-theme .owl-nav [class*=owl-]:hover{
+    background-color: #383c4000!important;
+}
+.owl-next{
+    position: absolute;
+    top: 5%;
+    right: 2px;
+    font-size: 38px!important;
+    height: 82%;
+    color: aliceblue!important;
+    width: 3%;
+    margin: 0!important;
+    font-size: 75px!important;
+}
+.menu .titel{
+    margin: 23px 70px;
+    font-size: 40px;
+}
+.image-h2{
+    position: absolute;
+    top: 72%;
+    left: 30%;
+    font-size: 55px;
+    color: #f0f8ffd4;
+}
+/* offers*/
+.offers{
+    padding: 10px;
+    background-color: #f3f4f4!important;;
+    margin: 20px;
+}
+.offers-titel{
+    font-size: 45px;
+    position: relative;
+    left: 40%;
+    margin: 20px 0px;
+}
+.owl-offers .item{
+    height: 400px;
+    margin: 30px;
+}
+.offer-image{
+    background-image: url(../images/slider-burger.jpg);
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    margin-left: 40px;
+}
+.image1{
+    background-image: url(../images/special-burger.jpg);
+}
+.image2{
+    background-image: url(../images/special-pizza.jpg);
+}
+.image3{
+    background-image: url(../images/special-dish.jpg);
+}
+.offer-content{
+    position: absolute;
+    top: 56px;
+    right: 0;
+    height: fit-content;
+    width: 45%;
+    margin-right: 64px;
+    background-color: white;
+}
+.content-head{
+    margin: 30px 50px;
+}
+.content-head h2{
+    font-size: 40px;
+}
+.content-head p{
+    color: black;
+    font-size: 23px;
+    line-height: 35px;
+}
+.main-ul{
+    list-style: none;
+    margin: 0px 54px 25px;
+    line-height: 40px;
+    font-size: 23px;
+}
+.true{
+    color: #0ff20f;
+    margin: 0px 10px;
+}
+.false{
+    color: #f20f0fd9;
+    margin: 0px 14px;
+}
+/*pormo-video*/
+.pormo-video{
+    height: 425px;
+    background-image: url(../images/bg-croissant.jpg);
+    background-size: cover;
+    width: 95%;
+    margin: auto;
+}
+.promo-content{
+    text-align: center;
+    margin: 20px;
+    padding: 60px;
+}
+.promo-content p{
+    font-size: 20px;
+}
+.promo-content h2{
+    font-size: 36px;
+    color: aliceblue;
+}
+.promo-play{
+    text-align: center;
+    border: 2px solid aliceblue;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    position: relative;
+    cursor: pointer;
+    padding: 10px;
+    transition: all 0.5s;
+}
+.promo-play:hover{
+    background-color: white;
+}
+.promo-play:hover .fa-solid.fa-play.play{
+    color: #282b2e;
+}
+.fa-solid.fa-play.play{
+    top: 50%;
+    position: absolute;
+    left: 53%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    color: aliceblue;
+}
+.footer{
+    background-color: #000000d6;
+    width: 95%!important;
+    margin-top: 0px!important;
+    height: fit-content;
+}
+.footer-main{
+    display: flex;
+    gap: 270px;
+    position: relative;
+    
+}
+.footer-logo{
+    width: 50px;
+    height: 50px;
+    margin: 0px 20px;
+    background-image: url(../images/logo\ soup.png);
+    background-size: cover;
+    margin: 36px 48px;
+    padding: 10px;
+}
+.footer-socailmedia h2{
+    font-size:30px;
+}
+.footer-socailmedia{
+    right: 40px;
+    position: absolute;
+    color: aliceblue;
+    margin: 30px;
+}
+.footer-socailmedia ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin-top: 10px;
+}
+.footer-socailmedia ul li{
+    margin: auto;
+    font-size: 20px;
+    cursor: pointer;
+}
+.footer-socailmedia ul li:hover{
+    color: var(--bordercolor);
+}
+.copyright{
+    text-align: center;
+}
+@media(max-width:767px){
+    .owl-stage-outer{
+        height: fit-content;
+    }
+    .item1,.item2,.item3{
+        height: 60vh;
+        background-position-x: center;
+    }
+    .content{
+        height: fit-content;
+        width: 50%;
+        top: 20%;
+    }
+    .content p{
+        font-size: 15px;
+    }
+    .content h2{
+        font-size: 22px;
+    }
+    .content button{
+        font-size: 15px;
+        padding: 7px;
+        margin: 20px 0px 10px 20px;
+    }
+    .pasta-price{
+        font-size: 13px;
+        height: 12%;
+        margin-top: -10px;
+    }
+    .rating{
+        width: fit-content;
+    }
+    .rate-content h2,p{
+        height: fit-content;
+    }
+    .reviwes-background{
+        position: absolute;
+        width: 60%;
+    }
+    .reviwes{
+        height: 850px;
+    }
+    .reviwe{
+        top: 540px;
+        width: 80%;
+    }
+    .reviwe-maker{
+        top: 735px;
+    }
+    .r2{
+        top: 780px;
+    }
+    .m2{
+        top: 970px;
+    }
+    .menu{
+        margin-top: 200px;
+    }
+    .owl-carousel.owl-theme.owl-menu.owl-loaded.owl-drag{
+        width: 90%!important;
+    }
+    span[aria-label]{
+        position: absolute;
+        top: 34%;
+        left: -5px;
+    }
+    .image-h2{
+        top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+    .offer-image{
+        width: 75%;
+        margin-left: 0px;
+    }
+    .offer-content{
+        margin-right: 0px;
+        top: 15%;
+    }
+    .content-head{
+        margin: 5px 20px;
+    }
+    .content-head h2{
+        font-size: 22px;
+    }
+    .content-head p{
+        font-size: 15px;
+        line-height: 27px;
+        margin: 0px;
+    }
+    .main-ul{
+        margin: 0;
+        line-height: 30px;
+        font-size: 9px;
+    }
+    .offers-titel{
+        left: 0;
+    }
+    .pormo-video{
+        height: fit-content;
+    }
+    .footer-socailmedia{
+        right: 10px;
+    }
+    .reviwes-background{
+        height: 950px;
+    }
+}
+@media(min-width:768px){
+    .content{
+        height: fit-content;
+    }
+    .content button{
+        margin: 20px 0px 20px 20px;
+        font-size: 22px;
+        padding: 10px;
+    }
+    .pasta-price{
+        margin-top: -20px;
+    }
+    .reviwe{
+        top: 320px;
+    }
+    .reviwe-maker{
+        top: 480px;
+    }
+    .r2{
+        top: 535px;
+    }
+    .m2{
+        top: 700px;
+    }
+}

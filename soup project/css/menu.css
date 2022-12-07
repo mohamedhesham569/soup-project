@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+}
+:root{
+    --maincolor:#282b2e;
+    --bordercolor:#ddae71;
+    --pcolor:rgb(161 158 158)
+}
+/*landing*/
+.landing{
+    background-color: #f3f4f4!important;
+    height: 35vh;
+    text-align: center;
+}
+.landing h2{
+    padding: 20px;
+    font-size: 60px;
+}
+.menu{
+    position: relative;
+    top: 60px;
+    width: 80%;
+    margin: auto;
+}
+.menu-image{
+    background-image: url(../images/menu-title-burgers.jpg);
+    height: 200px;
+    background-size: cover;
+}
+.menu-image h2{
+    position: relative;
+    top: 55%;
+    font-size: 50px;
+    color: #f9f5f5;
+    left: 5%;
+    width: fit-content;
+}
+#up-down:checked~.menu-image .layer .icon-up-down i,
+#up-down-2:checked~.menu-image .layer .icon-up-down i,
+#up-down-3:checked~.menu-image .layer .icon-up-down i,
+#up-down-4:checked~.menu-image .layer .icon-up-down i,
+#up-down-5:checked~.menu-image .layer .icon-up-down i,
+#up-down-6:checked~.menu-image .layer .icon-up-down i{
+    transform: rotate(180deg);
+    transition: all .5s;
+}
+#up-down,
+#up-down-2,
+#up-down-3,
+#up-down-4,
+#up-down-5,
+#up-down-6{
+    display: none;
+}
+#up-down:checked~.meals,
+#up-down-2:checked~.meals,
+#up-down-3:checked~.meals,
+#up-down-4:checked~.meals,
+#up-down-5:checked~.meals,
+#up-down-6:checked~.meals{
+    display: flex;
+    transition: all 0.5s;
+}
+.menu-li{
+    display: flex;
+    width: 100%;
+    /* position: relative; */
+    gap: 38%;
+    margin-top: 15px;
+    border: 1px solid;
+}
+.li-name{
+    padding: 10px;
+}
+.li-price{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 10px;
+}
+.li-price span{
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+.li-price span p{
+    color: var(--maincolor);
+    font-weight: 900;
+    margin: 0px 5px;
+}
+.li-price button{
+    background-color: #ffffff05;
+    padding: 8px 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: 900;
+    border-radius: 10px;
+    position: relative;
+}
+.li-price button::after{
+    content: "";
+    width: 100%;
+    height: 0;
+    position: absolute;
+    background-color: var(--maincolor);
+    bottom: 0;
+    left: 0;
+    border-radius: 8px;
+    z-index: -1;
+    transition: all 0.3s;
+}
+.li-price button:hover{
+    transform: scale(0.99);
+    color: white;
+}
+.li-price button:hover::after{
+    height: 100%;
+}
+.meal{
+    border: 1px solid #06060636;
+    border-radius: 20px;
+    margin: 10px 0px 20px;
+    box-shadow:inset;
+    transition: all 0.5s;
+}
+.meal:hover{
+    transform: scale(1.08);
+    box-shadow: 2px 2px 5px 1px #00000078;
+}
+.meal-image{
+    background-image: url(../images/product-burger.jpg);
+    background-size: cover;
+    height: 195px;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+.meals{
+    display:flex;
+    border: 1px solid #08080836;
+    padding: 15px;
+    border-top: none;
+    gap: 2%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 0px 0px 15px 15px;
+    transition: all 0.5s;
+    display: none;
+}
+.meal-name{
+    margin: 22px 10px;
+}
+.pasta-menu,.pizza-menu,.desearts-menu,.sushi-menu,.drinks-menu{
+    margin: 50px 0px;
+}
+.chicken-burger{
+    background-image: url(../images/burger/Chicken-burger-Italian-twist.jpg);
+}
+.big-burger{
+    background-image: url(../images/burger/Double-beef-burger.jpg);
+}
+.cheez-burger{
+    background-image: url(../images/burger/black_and_blue_burger_95881_16x9.jpg);
+}
+.big-withcatchep-burger{
+    background-image: url(../images/burger/53a1ca2c-3b66-43a2-98f1-51c0da3ad895.jpg);
+}
+.double-burger{
+    background-image: url(../images/burger/burger.jpg);
+}
+.pasta-image{
+    background-image: url(../images/menu-title-pasta.jpg);
+}
+.pasta1{
+    background-image: url(../images/pasta/Creamy-pasta.jpg);
+}
+.pasta2{
+    background-image: url(../images/pasta/Creamy-Spinach-Tomato-Pasta.jpg);
+}
+.pasta3{
+    background-image: url(../images/pasta/Garlic-Basil-Brown-Butter-Pasta.jpg);
+}
+.pasta4{
+    background-image: url(../images/pasta/pasta.jpg);
+    background-position: center;
+}
+.pasta5{
+    background-image: url(../images/pasta/vegen\ pasta.jpg);
+    background-position: center;
+}
+.sushi-image{
+    background-image: url(../images/menu-title-sushi.jpg);
+}
+.sushi1{
+    background-image: url(../images/sushi/csm_WEB_Tamago_Sushi_e086a9f158.jpg);
+}
+.sushi2{
+    background-image: url(../images/sushi/nigirisushi.jpg);
+}
+.sushi3{
+    background-image: url(../images/sushi/rice-paper-sushi-image.jpg);
+}
+.sushi4{
+    background-image: url(../images/sushi/Sushi-Rice-and-California-Rolls.jpg);
+    background-position: center;
+}
+.sushi5{
+    background-image: url(../images/sushi/sushi.jpg);
+}
+.pizza-image{
+    background-image: url(../images/menu-title-pizza.jpg);
+    background-position: center;
+}
+.pizza1{
+    background-image: url(../images/pizaa/mac\ and\ cheese\ pizaa.jpg);
+}
+.pizza2{
+    background-image: url(../images/pizaa/meat-lovers-pizza.jpg);
+}
+.pizza3{
+    background-image: url(../images/pizaa/Veggie-Pizza2.jpg);
+}
+.pizza4{
+    background-image: url(../images/pizaa/spicy\ chicken\ pizaa.jpg);
+}
+.pizza5{
+    background-image: url(../images/pizaa/veggie-pizza.jpg);
+    background-position: center;
+}
+.drinks-image{
+    background-image: url(../images/menu-title-drinks.jpg);
+    background-position: center;
+}
+.drinks1{
+    background-image: url(../images/drinks/hot\ chocklet.jpg);
+}
+.drinks2{
+    background-image: url(../images/drinks/mango.jpg);
+}
+.drinks3{
+    background-image: url(../images/drinks/Strawberry\ juice.jpg);
+}
+.drinks4{
+    background-image: url(../images/drinks/Coca-Cola.jpg);
+}
+.drinks5{
+    background-image: url(../images/drinks/pepsi.jpg);
+    background-position: center;
+}
+.desearts-image{
+    background-image: url(../images/menu-title-desserts.jpg);
+    background-position: center;
+}
+.desearts1{
+    background-image: url(../images/desearts/blancmange-dessert-pudding-2.jpg);
+}
+.desearts2{
+    background-image: url(../images/desearts/brownie-valentine.jpg);
+}
+.desearts3{
+    background-image: url(../images/desearts/desearts.jpg);
+    background-position: center;
+}
+.desearts4{
+    background-image: url(../images/desearts/french-gourmet-desserts.jpg);
+    background-position: center;
+}
+.desearts5{
+    background-image: url(../images/desearts/molten-cake.jpg);
+    background-position: center;
+}
+.desearts6{
+    background-image: url(../images/desearts/summer-desserts-500x500.jpg);
+}
+.layer{
+    width: 100%;
+    height: 100%;
+    background-color: #00000078;
+    position: relative;
+}
+.layer i{
+    position: absolute;
+    right: 3%;
+    color: white;
+    font-size: 65px;
+    bottom: 10%;
+    cursor: pointer;
+}
+.down{
+    transform: rotate(180deg);
+}
+@media(max-width:767px){
+    .landing{
+        height: 22vh;
+    }
+}

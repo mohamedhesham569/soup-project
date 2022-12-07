@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soup</title>
+    
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/fontawesome.min.css">
+    <link rel="stylesheet" href="../css/solid.min.css">
+    <link rel="stylesheet" href="../css/brands.min.css">
+    <link rel="stylesheet" href="../css/bookTable.css">
+    <link rel="stylesheet" href="../css/nav.css">
+</head>
+<body>
+    <!--start nav-->
+    <nav class="container">
+        <div class="nav-items">
+            <div class="logo"><img src="../images/logo soup.png" alt="logo"></div><input type="checkbox" id="check">
+            <label for="check" class="bars">
+            <i class="fas fa-bars"></i>
+            </label>
+            <div class="nav-ul">
+                <ul>
+                    <a href="home.html"><li>home</li></a>
+                    <a href="../html/menu.html"><li>menu</li></a>
+                    <a href="../html/offers.html"><li>offers</li></a>
+                    <a href="../html/about.html"><li>about</li></a>
+                    <a href="contact.html"><li>contact</li></a>
+                </ul>
+            </div>
+            <div class="cart">
+                <a href="cart.html">
+                <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                <h3 class="total-price" price="00.0">$00.0</h3>
+                </a>
+            </div>
+            
+        </div>
+    </nav>
+    <!--end nav-->
+    <!--start main-->
+    <div class="main">
+        <div class="bg-video">
+            <video muted playsinline preload="auto" loop autoplay class="video">
+                <source src="../images/video_3.mp4" type="video/mp4">
+            </video>
+            <div class="layer"></div>
+        </div>
+        <div class="book-form">
+            <div class="book-head">
+                <i class="fa-regular fa-book-bookmark fa-3x"></i>
+                <h2>Book a table</h2>
+                <p>Details about your reservation.</p>
+            </div>
+            <form action="#">
+                <label >
+                    <h2 for="#name">name:</h2>
+                    <input type="text" id="name" required>
+                </label>
+                <label >
+                    <h2 for="#email">email:</h2>
+                    <input type="email" id="email" required>
+                </label>
+                <label >
+                    <h2 for="#phone">phone:</h2>
+                    <input type="number" id="phone" required>
+                </label>
+                <label >
+                    <h2 for="#data">date:</h2>
+                    <input type="date" id="date" required>
+                </label>
+                <label >
+                    <h2 for="#attendens">attendens:</h2>
+                    <input type="number" id="attendens" required>
+                </label>
+                <button>Make reservation!</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

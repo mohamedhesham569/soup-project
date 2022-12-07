@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+}
+:root{
+    --maincolor:#282b2e;
+    --bordercolor:#ddae71;
+    --pcolor:rgb(161 158 158)
+}
+/*landing*/
+.landing{
+    
+    height: fit-content;
+    text-align: center;
+}
+.landing-head{
+    margin-bottom: 70px;
+    background-color: #f3f4f4!important;
+    padding: 10px;
+}
+.landing h2{
+    padding: 20px;
+    font-size: 60px;
+}
+.contact{
+    display: flex;
+    margin-bottom: 50px;
+    gap: 4%;
+}
+.contact-main{
+    width: 40%;
+    margin-left: 10%;
+}
+.adress,
+.phone,
+.email{
+    display: flex;
+    align-items: center;
+    margin: 15px 0px;
+    gap: 35px;
+}
+.follow{
+    position: relative;
+    text-align: left;
+    margin: 20px 0px;
+}
+.follow h3{
+    font-size: 25px;
+    margin: 25px;
+}
+.follow ul{
+    list-style: none;
+    display: flex;
+    font-size: 23px;
+    width: 45%;
+    justify-content: space-around;
+    margin-left: 10px;
+}
+
+.facebook:hover{
+    color: rgb(23, 23, 188);
+}
+.youtube:hover{
+    color: rgb(230, 39, 35);
+}
+.twitter:hover{
+    color: rgb(13, 13, 228);
+}
+.instagram:hover{
+    color: rgb(150, 14, 14);
+}
+.send-massage{
+    width: 40%;
+    margin:auto;
+}
+.send-massage h2{
+    font-size: 30px;
+    padding: 0;
+    margin: 10px 0px;
+}
+form{
+    position: relative;
+}
+.input-box{
+    position: relative;
+}
+.input-box input,
+.input-box textarea{
+    margin: 10px;
+    border: none;
+    /* margin: auto; */
+    width: 65%;
+    padding: 10px;
+    margin: 21px 0px;
+    border-bottom: 2px solid green;
+    outline: none;
+    color: black;
+    font-weight: 700;
+}
+.send{
+    position: absolute;
+    left: 15.5%;
+    padding: 7px 26px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #71c0f3;
+    border: none;
+    /* border-radius: 0px; */
+    color: white;
+    font-weight: 900;
+}
+.input-box input:focus ~ span,
+.input-box input:valid ~ span,
+.input-box textarea:focus~ span
+{
+    color: rgb(150, 14, 14);
+    transform: translateY(-15px);
+    font-size: 14px;
+    transition: all 0.5s;
+}
+.input-box span{
+    position: absolute;
+    left: 16%;
+    top: 1.5%;
+    font-size: 18px;
+    font-weight: 600;
+    pointer-events: none;
+}
+textarea{
+    margin-top: 25px!important;
+}
+textarea~span{
+    top: -6%!important;
+}
+.map{
+    border: 1.5px solid #00000063;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+@media(max-width:767px){
+    .contact{
+        flex-wrap: wrap;
+        gap: 4%;
+    }
+    .contact-main{
+        width: 100%;
+        margin-left: 13%;
+    }
+    .map{
+        margin: auto;
+    }
+    iframe{
+        border: 0;
+        width: 95%;
+    }
+    .send-massage{
+        width: 100%;
+        margin: auto;
+    }
+}

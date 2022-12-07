@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+}
+:root{
+    --maincolor:#282b2e;
+    --bordercolor:#ddae71;
+    --pcolor:rgb(161 158 158)
+}
+.landing{
+    background-color: #f3f4f4!important;
+    height: 35vh;
+    text-align: center;
+}
+.landing h2{
+    padding: 20px;
+    font-size: 60px;
+}
+.offers{
+    position: relative;
+    height: 1500px;
+    width: 100%;
+    background-color: #f3f4f4!important;
+}
+.offer{
+    position: absolute;
+    height: 500px;
+    width: 100%;
+    margin: 30px 0px;
+}
+.of2{
+    top: 500px;
+}
+.of3{
+    top: 1000px;
+}
+.offer-image{
+    position: absolute;
+    background-image: url(../images/special-burger.jpg);
+    height: 400px;
+    width: 50%;
+    background-repeat: no-repeat;
+    margin: 20px 53px;
+}
+.offer-content{
+    position: absolute;
+    top: 10%;
+    right: 0;
+    height: fit-content;
+    width: 45%;
+    margin-right: 64px;
+    background-color: white;
+    background-color: white;
+}
+.content-head{
+    margin: 5px 50px;
+}
+.content-head h2{
+    font-size: 40px;
+}
+.content-head p{
+    color: black;
+    font-size: 23px;
+    line-height: 35px;
+}
+.main-ul{
+    list-style: none;
+    margin: 0px 25px 25px;
+    line-height: 40px;
+    font-size: 23px;
+}
+.true{
+    color: #0ff20f;
+    margin: 0px 10px;
+}
+.false{
+    color: #f20f0fd9;
+    margin: 0px 14px;
+}
+.of3-image{
+    background-image: url(../images/special-dish.jpg);
+}
+.of2-image{
+    background-image: url(../images/special-pizza.jpg);
+}
+.of2-content{
+    top: 95px;
+}
+.of3-content{
+    top: 68px;
+}
+@media(max-width:767px){
+    .landing{
+        height: 22vh;
+    }
+    .offer-content{
+        margin-right: 20px;
+    }
+    .offer-image{
+        margin: 20px 25px;
+    background-position-x: -70px;
+    }
+    .of2-content{
+        top: 10%;
+    }
+    .content-head h2{
+        font-size: 17px;
+    margin-bottom: 5px;
+    }
+    .content-head p{
+        font-size: 15px;
+        line-height: 33px;
+    }
+    .main-ul{
+        line-height: 35px;
+        font-size: 11px;
+        margin: 0;
+    }
+}
