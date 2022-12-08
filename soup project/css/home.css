@@ -416,12 +416,13 @@ a{
 }
 .offer-content{
     position: absolute;
-    top: 56px;
+    top: 50%;
     right: 0;
     height: fit-content;
     width: 45%;
     margin-right: 64px;
     background-color: white;
+    transform: translate(10px, -50%);
 }
 .content-head{
     margin: 30px 50px;
@@ -618,7 +619,6 @@ a{
     }
     .offer-content{
         margin-right: 0px;
-        top: 15%;
     }
     .content-head{
         margin: 5px 13px;
