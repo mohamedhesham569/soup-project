@@ -40,19 +40,20 @@
     position: absolute;
     background-image: url(../images/special-burger.jpg);
     height: 400px;
-    width: 50%;
+    width: 70%;
     background-repeat: no-repeat;
     margin: 20px 53px;
 }
 .offer-content{
     position: absolute;
-    top: 10%;
+    top: 46%;
     right: 0;
     height: fit-content;
     width: 45%;
     margin-right: 64px;
     background-color: white;
     background-color: white;
+    transform: translate(10px, -50%);
 }
 .content-head{
     margin: 5px 50px;
@@ -85,12 +86,6 @@
 .of2-image{
     background-image: url(../images/special-pizza.jpg);
 }
-.of2-content{
-    top: 95px;
-}
-.of3-content{
-    top: 68px;
-}
 @media(max-width:767px){
     .landing{
         height: 22vh;
@@ -101,9 +96,6 @@
     .offer-image{
         margin: 20px 25px;
     background-position-x: -70px;
-    }
-    .of2-content{
-        top: 18%;
     }
     .content-head{
         margin:5px 13px;
