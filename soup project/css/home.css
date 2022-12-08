@@ -634,7 +634,7 @@ a{
     .main-ul{
         margin: 0;
         line-height: 25px;
-        font-size: 9px;
+        font-size: 7px;
     }
     .offers-titel{
         left: 0;
@@ -646,7 +646,7 @@ a{
         right: 10px;
     }
     .reviwes-background{
-        height: 10005px;
+        height: 1005px;
         left:10px
     }
 }
